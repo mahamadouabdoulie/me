@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of Mahamadou Abdoulie Jawneh — senior data analysis, business intelligence, software development and technical documentation.">
+<title>Mahamadou Abdoulie Jawneh | Data Analyst & Software Developer</title>
+<style>
+:root{--bg:#07101f;--panel:#101d32;--panel2:#14243d;--text:#eef5ff;--muted:#afc0d8;--line:rgba(174,202,239,.17);--blue:#36a9ff;--cyan:#59e0e5;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:radial-gradient(ellipse at 88% 0%,#102e58 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(7,16,31,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-weight:850;text-decoration:none;letter-spacing:.01em}.brand b{color:var(--blue)}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:.9rem;color:var(--muted);text-decoration:none}nav a:hover,.text-link:hover{color:var(--cyan)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:76px 0 56px}.eyebrow,.kicker{color:var(--cyan);font-size:.76rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-size:clamp(2.4rem,5vw,4.8rem);line-height:1.04;letter-spacing:-.05em;margin:15px 0}.hero h1 span{color:var(--blue)}.roleline{font-size:1.15rem;font-weight:700}.lead{color:var(--muted);max-width:640px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 18px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:750;transition:.2s}.btn.primary{background:linear-gradient(110deg,var(--blue),#1879e8);border-color:transparent;color:#061426}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #168de633}.social{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:.92rem}.social a{color:var(--cyan);text-decoration:none}.hero-image{border:1px solid #2676b8;border-radius:24px;overflow:hidden;box-shadow:0 24px 70px #00152c88}.hero-image img{display:block;width:100%;height:340px;object-fit:cover}
+.pill-row{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:0 0 58px}.pill{padding:18px;background:linear-gradient(140deg,#10213a,#0c192c);border:1px solid var(--line);border-radius:16px}.pill strong{display:block}.pill span{font-size:.86rem;color:var(--muted)}
+section{padding:62px 0;border-top:1px solid var(--line)}.section-head{max-width:760px;margin-bottom:28px}.section-head h2{font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.13;letter-spacing:-.035em;margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.about-grid,.skills-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel,.card{background:linear-gradient(145deg,rgba(17,31,52,.96),rgba(12,23,40,.96));border:1px solid var(--line);border-radius:20px;padding:25px}.about-image{padding:0;overflow:hidden;min-height:280px}.about-image img{width:100%;height:100%;min-height:280px;object-fit:cover;display:block}.panel h3,.card h3{margin:0 0 10px}.panel p,.card p{color:var(--muted)}.skill-group+.skill-group{margin-top:16px}.skill-group h3{font-size:1rem}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:6px 10px;border:1px solid #2a4b70;border-radius:99px;background:#102642;color:#d9eaff;font-size:.83rem}
+.timeline{display:grid;gap:15px}.job{display:grid;grid-template-columns:200px 1fr;gap:22px;padding:22px;border:1px solid var(--line);border-radius:17px;background:rgba(16,29,50,.8)}.job time{color:var(--cyan);font-size:.9rem;font-weight:750}.job h3{margin:0 0 3px}.company{color:var(--muted);margin-bottom:10px}.job ul{margin:0;padding-left:19px;color:#d5e2f3}.job li+li{margin-top:6px}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project-img{height:165px;margin:-25px -25px 20px;overflow:hidden;border-radius:20px 20px 0 0}.project-img img{width:100%;height:100%;object-fit:cover}.project-meta{color:var(--cyan);font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+.writer-banner{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;padding:0;overflow:hidden;border:1px solid #2676b8;border-radius:22px;background:linear-gradient(110deg,#102746,#0b1a30)}.writer-copy{padding:30px}.writer-banner img{width:100%;height:100%;min-height:250px;object-fit:cover}.writer-banner h2{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.1;margin:9px 0}.writer-banner p{color:var(--muted)}.writing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.writing-card{padding:22px;border-radius:17px;background:var(--panel);border:1px solid var(--line)}.writing-card .icon{font-size:1.5rem;color:var(--cyan)}.writing-card p{color:var(--muted);margin-bottom:0}.sample{border-left:3px solid var(--blue);padding:15px 18px;background:#10213a;border-radius:0 12px 12px 0;color:#dce9fa;margin-top:20px}.sample small{display:block;color:var(--cyan);font-weight:800;letter-spacing:.08em;margin-bottom:6px}
+.contact-card{padding:28px;border:1px solid #2676b8;border-radius:20px;background:linear-gradient(120deg,#102846,#0c1b31)}.contact-list{display:grid;gap:12px}.contact-item{padding:15px;border:1px solid var(--line);border-radius:13px;background:#0b192c}.contact-item small{display:block;color:var(--muted)}.note{font-size:.88rem;color:var(--muted)}
+footer{padding:28px 0 42px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.87rem}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:52px}.hero-image img{height:280px}.pill-row{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:5px}.writer-banner{grid-template-columns:1fr}.writer-banner img{max-height:230px}.writing-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.wrap{width:calc(100% - 28px)}.nav{align-items:flex-start;flex-direction:column;padding:15px 0}nav{gap:12px}.hero{gap:25px}.pill-row,.about-grid,.skills-grid,.project-grid,.writing-grid,.contact-grid{grid-template-columns:1fr}.hero-image img{height:220px}section{padding:46px 0}.panel,.card{padding:20px}.project-img{margin:-20px -20px 17px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+<a class="brand" href="#home">MAHAMADOU <b>JAWNEH</b></a>
+<nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#writing">Technical Writing</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main>
+<div class="wrap hero" id="home">
+<div>
+<div class="eyebrow">Data · Analytics · Software · Business Intelligence</div>
+<h1>Mahamadou Abdoulie <span>Jawneh</span></h1>
+<div class="roleline">Senior Data Analyst | Software Developer | Business Intelligence</div>
+<p class="lead">I work across data analysis, business intelligence, data quality, and software development. I use analytical thinking and practical technical skills to turn business requirements into useful insights and dependable solutions.</p>
+<div class="actions"><a class="btn primary" href="Mahamadou_Jawneh_CV.docx" download>↓ Download résumé</a><a class="btn" href="#projects">Explore my work ↘</a></div>
+<div class="social"><span>Hollywood, California, USA</span><span>•</span><a href="#contact">Contact details</a></div>
+</div>
+<div class="hero-image"><img src="assets/analytics-workspace.jpg" alt="Illustrative data analytics workspace with dashboards and a laptop"></div>
+</div>
+<div class="wrap pill-row">
+<div class="pill"><strong>Data Analysis</strong><span>Prepare, validate and interpret data</span></div>
+<div class="pill"><strong>Business Intelligence</strong><span>Dashboards, KPIs and reporting</span></div>
+<div class="pill"><strong>Software Development</strong><span>Applications, APIs and databases</span></div>
+<div class="pill"><strong>Data Quality</strong><span>Annotation, review and validation</span></div>
+</div>
+
+<section id="about"><div class="wrap">
+<div class="section-head"><div class="kicker">Profile</div><h2>About me</h2><p>Computer Science professional with experience across data analytics, business intelligence, data annotation, data research and software development.</p></div>
+<div class="about-grid">
+<article class="panel"><h3>Connecting data and software</h3><p>My work combines SQL and Python-based analysis with application development, API integration, database design, and workflow automation. I have worked on analytical datasets, dashboards, software features, data quality, and communicating findings to technical and non-technical stakeholders.</p><p>I value maintainable code, reliable data, clear documentation, and practical results.</p></article>
+<div class="panel about-image"><img src="assets/business-intelligence.jpg" alt="Illustrative business intelligence reporting and data visualization"></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="section-head"><div class="kicker">Technical toolkit</div><h2>Skills & technologies</h2><p>Technologies and working methods listed in the supplied CV. Specific framework and cloud proficiency should be confirmed before publication.</p></div>
+<div class="skills-grid">
+<div class="panel">
+<div class="skill-group"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">JavaScript / TypeScript</span><span class="tag">Java / C++</span></div></div>
+<div class="skill-group"><h3>Analytics</h3><div class="tags"><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Statistical analysis</span><span class="tag">KPI design</span><span class="tag">Forecasting</span><span class="tag">A/B testing</span></div></div>
+<div class="skill-group"><h3>BI & reporting</h3><div class="tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Excel</span><span class="tag">Power Query</span></div></div>
+</div>
+<div class="panel">
+<div class="skill-group"><h3>Software & data</h3><div class="tags"><span class="tag">REST APIs</span><span class="tag">Backend development</span><span class="tag">Automated testing</span><span class="tag">Code review</span><span class="tag">PostgreSQL</span><span class="tag">SQL Server</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Data modelling</span><span class="tag">ETL / ELT</span><span class="tag">Data validation</span></div></div>
+<div class="skill-group"><h3>Cloud & delivery</h3><div class="tags"><span class="tag">Git</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">AWS / Azure / GCP*</span><span class="tag">Agile / Scrum</span></div></div>
+<p class="note">*The CV lists AWS, Azure and GCP as skills, but does not specify projects or proficiency levels. Confirm which platforms you actively use before sharing this portfolio.</p>
+</div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="section-head"><div class="kicker">Career history</div><h2>Professional experience</h2></div>
+<div class="timeline">
+<article class="job"><time>Oct 2025 – Sept 2026</time><div><h3>Senior Data Analyst & Software Developer</h3><div class="company">Fulcrum Rocks · Sheridan, Wyoming</div><ul><li>Developed SQL and Python workflows to combine, clean, validate and analyse data.</li><li>Designed and maintained dashboards for business KPI tracking and reporting.</li><li>Built or integrated software features and REST APIs to connect analytical outputs with operational workflows.</li><li>Worked with product, engineering and business stakeholders on requirements, testing, documentation and releases.</li><li>Used automated tests, data-quality checks, monitoring and version control practices.</li></ul></div></article>
+<article class="job"><time>Jan 2024 – Apr 2025</time><div><h3>AI Data Annotation & Dataset Reviewer</h3><div class="company">Micro AI Project · Remote</div><ul><li>Annotated and validated datasets used to train and evaluate machine learning models.</li><li>Applied quality-control standards to check data accuracy, consistency and reliability.</li><li>Performed segmentation and feature identification tasks.</li><li>Participated in peer review and validation, delivering time-sensitive tasks in a remote environment.</li></ul></div></article>
+<article class="job"><time>May 2023 – Jun 2024</time><div><h3>Data Analyst / Software Developer</h3><div class="company">Ibez Software House · Washington, DC, USA</div><ul><li>Created reusable SQL queries, Python scripts and reporting datasets for business questions.</li><li>Developed application components and API integrations.</li><li>Investigated data discrepancies and worked with stakeholders on consistent report definitions.</li><li>Participated in code reviews, testing, sprint planning, deployment support and troubleshooting.</li><li>Produced technical documentation and explained analytical findings to different audiences.</li></ul></div></article>
+</div>
+<p class="note">The experience descriptions above are based on the supplied CV. Some original CV bullet points contain unfilled placeholders for systems, frameworks and quantified results; those details have not been invented here.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="section-head"><div class="kicker">Selected work</div><h2>Projects & applied skills</h2><p>Project summaries reproduced from the CV at a high level. Add links to repositories, dashboards or demos when they are ready to share.</p></div>
+<div class="project-grid">
+<article class="card"><div class="project-img"><img src="assets/business-intelligence.jpg" alt="Business intelligence dashboard illustration"></div><div class="project-meta">SQL · Python · Power BI / Tableau</div><h3>Integrated Business Intelligence & Analytics Platform</h3><p>A workflow for ingesting, cleaning, validating and modelling data, followed by a dashboard for monitoring key performance indicators. The CV also notes documentation of data definitions, validation rules, assumptions and findings.</p></article>
+<article class="card"><div class="project-img"><img src="assets/analytics-workspace.jpg" alt="Software development and analytics workspace illustration"></div><div class="project-meta">Python / Node.js · API · Database</div><h3>Full-Stack Application or Analytics API</h3><p>An application or API concept supporting a defined user need, with input validation, error handling, database operations and automated tests. The CV lists architecture, setup, testing and trade-off documentation as project outputs.</p></article>
+</div>
+</div></section>
+
+<section id="writing"><div class="wrap">
+<div class="writer-banner">
+<div class="writer-copy"><div class="kicker">Another side of my work</div><h2>Meet Mahamadou as a Technical Writer</h2><p>I turn technical processes, analytical findings and software workflows into clear documentation that helps people understand systems and use them with confidence.</p><a class="btn primary" href="#writing-details">Explore my writing approach ↘</a></div>
+<img src="assets/technical-writing.jpg" alt="Illustrative notebook and pen representing technical documentation and writing">
+</div>
+<div id="writing-details" style="padding-top:30px">
+<div class="section-head"><h2>Technical writing & documentation</h2><p>The CV specifically notes technical documentation and communication of analytical findings. The areas below describe relevant document types that can be demonstrated through writing samples.</p></div>
+<div class="writing-grid">
+<article class="writing-card"><div class="icon">▤</div><h3>Technical documentation</h3><p>Documenting system components, data definitions, workflows, assumptions and technical decisions.</p></article>
+<article class="writing-card"><div class="icon">⌘</div><h3>API & software guides</h3><p>Organising setup notes, API behaviour, input requirements, error handling and testing information.</p></article>
+<article class="writing-card"><div class="icon">▣</div><h3>Data & BI reporting</h3><p>Explaining KPI definitions, analytical methods, dashboard findings and data-quality rules in clear language.</p></article>
+</div>
+<div class="sample"><small>ILLUSTRATIVE DOCUMENTATION EXAMPLE</small><strong>Before:</strong> “Run the data validation process prior to publishing the report.”<br><strong>Clearer:</strong> “Check the dataset for missing values, duplicate records and invalid entries. Resolve or document any issues before refreshing and sharing the report.”<br><span class="note">This is an illustrative writing sample, not a claim of published client work.</span></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="section-head"><div class="kicker">Education & credentials</div><h2>Academic background</h2></div>
+<div class="about-grid">
+<article class="panel"><h3>B.Sc. / B.Tech. in Computer Science</h3><p><strong>University of California, Merced</strong><br>Merced, California, USA<br>Expected graduation: 2028</p><p>Relevant coursework listed: Data Structures & Algorithms, Database Systems, Statistics, Software Engineering, Operating Systems and Computer Networks.</p></article>
+<article class="panel"><h3>Certifications</h3><p><strong>Microsoft Certified:</strong> Power BI Data Analyst Associate · 2026</p><p><strong>AWS Certified Developer:</strong> Amazon · 2025</p><p class="note">Certification names and years are presented as stated in the supplied CV.</p></article>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="section-head"><div class="kicker">Contact</div><h2>Let's connect</h2><p>Open to conversations about data analytics, business intelligence, software development and technical documentation.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><h3>Mahamadou Abdoulie Jawneh</h3><p>Hollywood, CA, 90028, USA</p><p>Phone: <a href="tel:+13237990668">+1 (323) 799-0668</a></p><p class="note">The CV contains “[Professional Email]” and a LinkedIn label without an actual address or URL. Those links are intentionally not fabricated.</p></div>
+<div class="contact-list"><div class="contact-item"><small>Email</small>Professional email address not supplied</div><div class="contact-item"><small>LinkedIn</small>LinkedIn profile URL not supplied</div><div class="contact-item"><small>GitHub / project links</small>Add public repository and dashboard links when available</div></div>
+</div>
+</div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Mahamadou Abdoulie Jawneh</span><span>Data · Build · Analyse · Document</span><a href="#home" style="color:var(--cyan);text-decoration:none">Back to top ↑</a></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!reduce&&"IntersectionObserver"in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll("section .panel,section .card,section .job,section .writer-banner").forEach(el=>{el.classList.add("reveal");io.observe(el)})}
+</script>
+</body></html>
